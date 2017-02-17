@@ -1,0 +1,361 @@
+<!-- 
+Kerem Taspinar
+keremtaspinar@gmail.com
+keremtaspinar.com
+-->
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Masonry with Lazyload</title>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+	<script src="http://cdn.jsdelivr.net/jquery.lazyload/1.8.4/jquery.lazyload.js"></script>
+	<script src="http://cdn.jsdelivr.net/masonry/2.1.08/jquery.masonry.min.js"></script>
+	<style>
+		#container .wrapper {
+			position: relative;
+		}
+		
+		#container .wrapper> .inner {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+		
+		#container.fluid .item {
+			width: 24.5%;
+			margin: 3px 0.0% 3px 0.0%;
+			/*border: 1px solid grey;*/
+		}
+		
+		#container.fluid .item img {
+			/*display: none;*/
+			display: block;
+			width: 100%;
+			height: auto !important;
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container" class="fluid" >
+		<div class="item" >
+			<div class="wrapper" style="width:100%;"  id="rresim1">
+				<div class="inner" >
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/1.jpg"  id="resim1"/>
+
+				</div>
+
+			</div>
+
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim2">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/2.jpg" id="resim2"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim3">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/3.jpg" id="resim3"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;" id="rresim4">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/4.jpg" id="resim4"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim5">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/5.jpg"  id="resim5"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim6">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/6.jpg"  id="resim6"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim7">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/7.jpg"  id="resim7"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim8">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/8.jpg"  id="resim8"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim9">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/9.jpg"  id="resim9"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim10">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/7.jpg"  id="resim10"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim11">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/3.jpg"  id="resim11"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim12">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/6.jpg"  id="resim12"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim13">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/1.jpg"  id="resim13"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim14">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/9.jpg"  id="resim14"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim15">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/4.jpg"  id="resim15"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim16">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/2.jpg"  id="resim16"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim17">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/3.jpg"  id="resim17"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim18">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/1.jpg"  id="resim18"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim19">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/2.jpg"  id="resim19"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim20">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/3.jpg"  id="resim20"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim21">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/4.jpg"  id="resim21"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim22">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/5.jpg"  id="resim22"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim23">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/6.jpg"  id="resim23"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim24">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/7.jpg"  id="resim24"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim25">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/8.jpg"  id="resim25"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim26">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/9.jpg"  id="resim26"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim27">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/8.jpg"  id="resim27"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim28">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/7.jpg"  id="resim28"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim29">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/6.jpg"  id="resim29"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim30">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/5.jpg"  id="resim30"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper" style="width:100%;"  id="rresim31">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/4.jpg"  id="resim31"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim32">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/3.jpg"  id="resim32"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim33">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/2.jpg"  id="resim33"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper " style="width:100%;"  id="rresim34">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/1.jpg"  id="resim34"/>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="wrapper" style="width:100%;"  id="rresim35">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/9.jpg"  id="resim35"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="wrapper" style="width:100%; " id="rresim36">
+				<div class="inner">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="http://keremtaspinar.com/images/6.jpg"  id="resim36"/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<script>
+		$( document ).ready( function () {
+			
+			var yukseklik = $("#resim1").height();
+			$("html").find(".item").each(function(i){
+				resimSayisi=i+1;
+			});
+			
+			ekran = $(window).width();
+			console.log("Ekran Boyutu: "+ekran);
+			
+			for(i=1; i<= resimSayisi; i++){
+				var newImg = new Image();
+				newImg.src = $("#resim"+i).attr("data-original");
+				var height = newImg.height;
+				var width = newImg.width;
+				if(height>width){denklem = ((height * (ekran / 4))/width)-15;}
+				else {denklem = ((height * (ekran / 4))/width)-5;}
+				degisken = "rresim"+i;
+				console.log(degisken+": "+denklem);
+				document.getElementById(degisken).style.paddingBottom = denklem+"px"
+			}
+		})
+	</script>
+
+
+
+
+
+
+	<script>
+		var $container = $( '#container' );
+		$container.imagesLoaded( function () {
+			$container.masonry( {
+				itemSelector: '.item',
+				columnWidth: function ( containerWidth ) {
+					return containerWidth / 12;
+				}
+			} );
+			$( '.item img' ).lazyload( {
+				effect: 'fadeIn'
+			} );
+			$( '.item img' ).trigger( 'scroll' );
+		} );
+	</script>
+</body>
+
+</html>
